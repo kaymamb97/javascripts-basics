@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARRAY</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+    document.write("<b>Here's what the array initialy looks likes:</b>"+"<br>");
+    //creating an array.
+    var cities = ["Berlin","Denver","Tokyo"];
+    for(var i=0; i < cities.length; i++){
+        document.writeln(cities[i]);
+
+    }
+document.writeln("<br>");
+    //adding an item to the end of the array.
+    cities.push("Rio","Madrid","Moscow");
+
+    //Print the new array.
+    document.write("<br>"+"<b>Here's how the new array looks likes with items added from the back:</b>"+"<br>");
+    for(var j = 0; j < cities.length; j++){
+        document.writeln(cities[j])
+    }
+    document.writeln("<br>");
+    
+    //adding items in front of the array.
+    cities.unshift("Professor", "Lisbon");
+     //Print the new array.
+     document.write("<br>"+"<b>Here's how the new array looks likes with items added in front:</b>"+"<br>");
+    for(var k = 0; k < cities.length; k++){
+        document.writeln(cities[k])
+    }
+    document.writeln("<br>");
+    
+    //deleting items from the array.
+    cities.pop();
+
+    document.write("<br>"+"<b>Here's how the new array looks likes with items removed from the back:</b>"+"<br>");
+    for(var r = 0; r < cities.length; r++){
+        document.writeln(cities[r])
+    }
+    document.writeln("<br>");
+
+    //creating a for each function.
+    document.write("<br>"+"<b>Here is how you can use for each function!!</b>"+"<br>");
+    cities.forEach(function(val,i,arr){
+        document.write(i+": "+val+"<br>")
+    });
+
+    
+    </script>
+</body>
+</html>
